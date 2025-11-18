@@ -7,8 +7,6 @@ The project includes:
 - Custom Semgrep rules written in YAML  
 - Semgrep scan results  
 - Documentation & explanation  
-- Clean Git workflow using a dedicated branch  
-- Final assignment report (DOCX)
 
 ---
 
