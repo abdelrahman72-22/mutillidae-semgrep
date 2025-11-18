@@ -33,6 +33,9 @@ Detects **Command Injection** when user-controlled data reaches:
 - `system()`
 - `exec()`
 - Backtick execution
+ ```php
+ shell_exec("curl --silent -H 'Origin: http://$lCurrentOrigin' " . $lServerURL);
+ ```
 
 **Why dangerous?**  
 User input inside OS commands allows remote code execution.
