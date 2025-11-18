@@ -1,0 +1,11 @@
+rules:
+  - id: dangerous-shell-exec
+    patterns:
+      - pattern: shell_exec($CMD)
+      - pattern-not: shell_exec("...")
+    message: "Possible Command Injection — user input passed to shell_exec()"
+    severity: ERROR
+    languages: [php]
+    metadata:
+      category: security
+      cwe: "CWE-78: OS Command Injection"
