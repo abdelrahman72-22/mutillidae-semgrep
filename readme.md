@@ -1,0 +1,2 @@
+# mutillidae-semgrep
+Initial commit
