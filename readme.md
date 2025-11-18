@@ -45,9 +45,12 @@ Detects **SQL Injection** patterns created by unsafe string concatenation such a
 ```php
 $query = "SELECT * FROM accounts WHERE username='" . $_POST['username'] . "'";
 
-docker run --rm -v "${PWD}:/src" returntocorp/semgrep \
-  semgrep -c /src/semgrep-rules /src/src --verbose
 
+```
+---
+## How To run (powershell)
+```
+docker run --rm -v "${PWD}:/src" returntocorp/semgrep semgrep -c /src/semgrep-rules /src/src --verbose
 ```
 ---
 ## 🔥 Command Injection Findings (14)
