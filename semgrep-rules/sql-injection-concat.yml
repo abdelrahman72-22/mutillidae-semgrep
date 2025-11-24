@@ -1,0 +1,13 @@
+rules:
+  - id: sql-injection-concat
+    severity: ERROR
+    message: "Possible SQL Injection — query built using string concatenation"
+    languages: [php]
+
+    patterns:
+      # Detect string concatenation inside SQL query assignments
+      - pattern: $Q = "..." . $X;
+
+    metadata:
+      cwe: "CWE-89"
+      category: security
